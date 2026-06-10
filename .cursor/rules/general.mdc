@@ -1,0 +1,35 @@
+---
+description: General coding conventions for this workspace
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Workspace Conventions
+
+## Code Style
+
+- Prefer clarity over cleverness; write code that is easy to read and understand
+- Use meaningful variable and function names that convey intent
+- Keep functions small and focused on a single responsibility
+- Add comments only when the *why* is not obvious from the code itself
+
+## Git
+
+- Write concise, imperative commit messages (e.g., "Add feature" not "Added feature")
+- Keep commits atomic — one logical change per commit
+- Never commit secrets, credentials, or API keys
+
+## File Organization
+
+- Group related files in appropriately named directories
+- Keep the root directory clean; move configuration files to dedicated folders where possible
+
+## Error Handling
+
+- Always handle errors explicitly; never silently swallow exceptions
+- Provide meaningful error messages that help diagnose the problem
+
+## Testing
+
+- Write tests alongside new features and bug fixes
+- Prefer unit tests for pure logic and integration tests for I/O boundaries
